@@ -24,7 +24,7 @@ import { Animal } from './animal.model';
       </select>
       <hr>
 
-      <div *ngFor='let currentAnimal of childAnimalList | age:filterAge'>
+      <div *ngFor='let currentAnimal of childAnimalList | age:filterBy'>
         <p (click)="editAnimal(currentAnimal)"><b>{{currentAnimal.name}}, {{currentAnimal.species}}</b>, Age: <b>{{currentAnimal.age}}</b></p>
       </div>
     </div>
@@ -58,9 +58,9 @@ export class AnimalListComponent {
     this.selectedAnimal = null;
   }
 
-  filterAge: string = "allAnimals";
+  filterBy: string = "allAnimals";
 
   onChange(menuOption) {
-    this.filterAge = menuOption;
+    this.filterBy = menuOption;
   }
 }

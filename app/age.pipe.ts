@@ -7,52 +7,35 @@ import { Animal } from './animal.model';
 })
 
 export class AgePipe implements PipeTransform {
-  transform(input: Animal[], desiredAge){
-      var output: Animal[] = [];
-      if(desiredAge === "youngAnimals") {
-      for (var i = 0; i < input.length; i++){
-        if (input[i].age < 3){
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else if (desiredAge === "matureAnimals") {
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].age >= 3) {
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else if (desiredAge === "omnivores"){
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].diet === "Omnivore") {
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else if (desiredAge === "carnivores"){
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].diet === "Carnivore") {
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else if (desiredAge === "herbivores"){
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].diet === "Herbivore") {
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else if (desiredAge === "any-meat-eaters"){
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].diet === "Carnivore" || input[i].diet === "Omnivore") {
-          output.push(input[i]);
-        }
-      }
-      return output;
-    } else {
-      return input;
+  transform(input: Animal[], filterCondition){
+    var output: Animal[] = [];
+    switch(filterCondition){
+      case "youngAnimals":
+        return input.filter(function(animal){
+          return animal.age < 3;
+        });
+      case "matureAnimals":
+        return input.filter(function(animal){
+          return animal.age >= 3;
+        });
+      case "omnivores":
+        return input.filter(function(animal){
+          return animal.diet === "Omnivore";
+        });
+      case "carnivores":
+        return input.filter(function(animal){
+          return animal.diet === "Carnivore";
+        });
+      case "herbivores":
+        return input.filter(function(animal){
+          return animal.diet === "Herbivore";
+        });
+      case "any-meat-eaters":
+        return input.filter(function(animal){
+          return animal.diet === "Omnivore" || animal.diet === "Carnivore";
+        });
+      default:
+        return input;
     }
   }
 }
