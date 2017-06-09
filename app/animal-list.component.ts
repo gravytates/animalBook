@@ -13,12 +13,15 @@ import { Animal } from './animal.model';
       <h3>Animal List</h3>
       <hr>
       <div *ngFor='let currentAnimal of childAnimalList'>
-        <p>{{currentAnimal.name}}, Species: {{currentAnimal.species}}, Age: {{currentAnimal.age}}</p>
+        <p (click)="editAnimal(currentAnimal)">{{currentAnimal.name}}, Species: {{currentAnimal.species}}, Age: {{currentAnimal.age}}</p>
       </div>
     </div>
     <div class="col-md-4">
       <h3>Edit Animal</h3>
       <hr>
+      <div *ngIf="selectedAnimal">
+        <edit-animal [selectedAnimal]="selectedAnimal" (finishedEditingSender)="finishedEditing()"></edit-animal>
+      </div>
     </div>
   `
 })
@@ -33,5 +36,13 @@ export class AnimalListComponent {
   newAnimal(newAnimal){
     this.childAnimalList.push(newAnimal);
     this.newAnimalSender.emit(this.childAnimalList);
+  }
+
+  editAnimal(currentAnimal){
+    this.selectedAnimal = currentAnimal;
+  }
+
+  finishedEditing(){
+    this.selectedAnimal = null;
   }
 }
