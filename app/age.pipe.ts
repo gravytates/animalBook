@@ -44,6 +44,13 @@ export class AgePipe implements PipeTransform {
         }
       }
       return output;
+    } else if (desiredAge === "any-meat-eaters"){
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].diet === "Carnivore" || input[i].diet === "Omnivore") {
+          output.push(input[i]);
+        }
+      }
+      return output;
     } else {
       return input;
     }

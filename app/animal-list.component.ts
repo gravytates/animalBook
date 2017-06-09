@@ -20,6 +20,7 @@ import { Animal } from './animal.model';
         <option value="omnivores">Omnivores</option>
         <option value="carnivores">Carnivores</option>
         <option value="herbivores">Herbivores</option>
+        <option value="any-meat-eaters">All meat eaters</option>
       </select>
       <hr>
 
