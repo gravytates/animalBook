@@ -5,6 +5,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
+  <br>
   <h4>{{selectedAnimal.name}}'s Details (type-over and submit to edit): </h4>
   <img id="animal-pic" src={{selectedAnimal.image}} alt="Animal Pic">
   <div>
