@@ -6,6 +6,7 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
   <h4>{{selectedAnimal.name}}'s Details (type-over and submit to edit): </h4>
+  <img id="animal-pic" src={{selectedAnimal.image}} alt="Animal Pic">
   <div>
     <label>Species:</label><br>
     <input [(ngModel)]="selectedAnimal.species"><br>
@@ -38,6 +39,8 @@ import { Animal } from './animal.model';
     <textarea class="form-control" rows="3" [(ngModel)]="selectedAnimal.likes"></textarea><br>
     <label>Dislikes</label><br>
     <textarea class="form-control" rows="3" [(ngModel)]="selectedAnimal.dislikes"></textarea>
+    <label>Image url</label><br>
+    <input [(ngModel)]="selectedAnimal.image">
   </div>
   <br>
   <button class="btn btn-default" (click)="finishedEditing()">Done</button>

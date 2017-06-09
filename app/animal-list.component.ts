@@ -13,7 +13,7 @@ import { Animal } from './animal.model';
       <h3>Animal List</h3>
       <hr>
 
-      <select (change)="onChange($event.target.value)">
+      <select class="form-control" (change)="onChange($event.target.value)">
         <option value="allAnimals" selected="selected">All Animals</option>
         <option value="youngAnimals">Animals under 2 years old</option>
         <option value="matureAnimals">Animals 2 years or older</option>

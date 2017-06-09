@@ -38,8 +38,10 @@ import { Animal } from './animal.model';
       <textarea class="form-control" rows="3" #likes></textarea><br>
       <label>Dislikes</label><br>
       <textarea class="form-control" rows="3" #dislikes></textarea><br>
+      <label>Image url</label><br>
+      <input #image><br>
     </div>
-    <button class="btn btn-default"(click)="submitForm( species.value, name.value, age.value, diet.value, location.value, caretakers.value, gender.value, likes.value, dislikes.value); species.value=''; name.value=''; age.value=''; caretakers.value=''; likes.value=''; dislikes.value='';">Add Animal</button>
+    <button class="btn btn-default"(click)="submitForm( species.value, name.value, age.value, diet.value, location.value, caretakers.value, gender.value, likes.value, dislikes.value, image.value); species.value=''; name.value=''; age.value=''; caretakers.value=''; likes.value=''; dislikes.value=''; image.value='';">Add Animal</button>
 
   `
 })
@@ -47,8 +49,8 @@ import { Animal } from './animal.model';
 export class NewAnimalComponent {
   @Output() newAnimal = new EventEmitter();
 
-  submitForm(species: string, name: string, age: string, diet: string, location: string, caretakers: string, gender: string, likes: string, dislikes: string) {
-    var newAnimal: Animal = new Animal(species, name, parseInt(age,10), diet, location, parseInt(caretakers,10), gender, likes, dislikes);
+  submitForm(species: string, name: string, age: string, diet: string, location: string, caretakers: string, gender: string, likes: string, dislikes: string, image: string) {
+    var newAnimal: Animal = new Animal(species, name, parseInt(age,10), diet, location, parseInt(caretakers,10), gender, likes, dislikes, image);
     this.newAnimal.emit(newAnimal);
   }
 }
