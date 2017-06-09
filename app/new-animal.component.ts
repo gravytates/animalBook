@@ -22,7 +22,7 @@ import { Animal } from './animal.model';
       <label>Location:</label><br>
       <select class="form-control" #location>
         <option> Northern Trail </option>
-        <option> Tropical Rain Forest Building </option>
+        <option> Tropical Rain Forest </option>
         <option> Tiger Den </option>
         <option> African Savannah </option>
         <option> Polar Bowl </option>
