@@ -5,10 +5,11 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
   <div class="container-fluid">
-    <h1>AnimalBook</h1>
     <div class="row">
-      <div class="col-md-6"><animal-list [childAnimalList]="masterAnimalList"></animal-list></div>
-      <div class="col-md-6"></div>
+      <div class="col-md-12"><h1>AnimalBook</h1></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><animal-list [childAnimalList]="masterAnimalList"></animal-list></div>
     </div>
   </div>
 `
