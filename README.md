@@ -2,22 +2,23 @@
 ![Image of Homepage Screenshot](resources/images/homepage.png)
 
 * Visit the site https://gravytates.github.io/animalBook
-* A typescript and angular website to track animal data at the local zoo! Zoo staff can add and edit an animal's personal profile. See all animals or group them by age and diet! See the total minimum caretakers required on a day-to-day basis and checkout the average animal age at the zoo. Using custom components and ng pipes, this site is perfect for organizing a busy zoo manager's day.
+
+A zoo manager's best friend. This typescript and angular 2 website can help you track animal data at your local zoo. Zoo staff can add and edit an animal's personal profile. See all animals or group them by age and diet! See the total minimum caretakers required on a day-to-day basis, and checkout the average animal age at the zoo. Using custom components and ng pipes, this site is perfect for organizing a busy zoo manager's day.
 
 ### MVP features
 
-Each animal has properties describing its: species, name, age, diet, location, amount of caretakers, gender, likes, and dislikes.
-Users can add a new animal to the site.
-Users can see a list of all animals by default and filter between available lists of young animals (under two years old), and mature animals (two years and older).
-Users can click an animal to edit its properties.
-Site will list minimum total number of caretakers needed in a day.
-Average age of all animals.
-Group by Diet type (carnivores, omnivores, herbivores).
+* Each animal has properties describing its: species, name, age, diet, location, amount of caretakers, gender, likes, dislikes, and an image url for display.
+* Users can add a new animal to the site.
+* Users can see a list of all animals by default and filter between available lists of young animals (under two years old), and mature animals (two years and older).
+* Users can click an animal to edit its properties.
+* Site will list minimum total number of caretakers needed in a day.
+* Average age of all animals.
+* Group by Diet type (carnivores, omnivores, herbivores).
 
 ### Room for additional Functionality
 
-Group by species- specific data features of subgroups (avg age, total caretakers).
-Featured animal of the day.
+* Group by species- specific data features of subgroups (avg age, total caretakers).
+* Featured animal of the day.
 
 ### Prerequisites
 
@@ -94,6 +95,10 @@ transform(input: Animal[], filterCondition){
 ## Authors
 
 * Grady Shelton
+
+## Contact
+
+Please feel free to contact me, Grady Shelton, at gradyish@gmail.com if you have any questions, concerns or suggestions regarding this repository. Improving every day is my primary goal, so I encourage you to reach out if you have any feedback you'd like to share!
 
 ## License
 
