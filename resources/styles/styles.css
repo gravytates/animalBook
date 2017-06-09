@@ -11,8 +11,11 @@
 }
 
 #animalBook {
-  font-family: 'Averia Serif Libre', cursive;
   color: green;
+}
+
+h1, h3 {
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 .animal-list {

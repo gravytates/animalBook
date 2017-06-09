@@ -32,7 +32,7 @@ export class MasterComponent {
     for(var animal of childAnimalList){
       totalAge += animal.age;
     };
-    this.totalAverageAge = (totalAge / n);
+    this.totalAverageAge = (totalAge / n).toPrecision(3);
     return this.totalAverageAge;
   }
 

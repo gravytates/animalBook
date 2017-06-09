@@ -29,7 +29,7 @@ import { Animal } from './animal.model';
         </div>
       </div>
       <div class="col-md-4">
-        <h3>Animal Details/Edit</h3>
+        <h3>Animal Details & Edit</h3>
 
         <div *ngIf="selectedAnimal">
           <edit-animal [selectedAnimal]="selectedAnimal" (finishedEditingSender)="finishedEditing()"></edit-animal>

@@ -1,8 +1,8 @@
 # _AnimalBook_
-![Image of Homepage Screenshot](img/homepage.png)
+![Image of Homepage Screenshot](resources/images/homepage.png)
 
-* Visit the site https://gravytates.github.io/doctor_discovery
-* A typescript and angular website to track animal data at the local zoo! Zoo staff can add and edit an animal's personal profile. See all animals or group them by age! Using custom components and ng pipes, this site is perfect for organizing a busy zoo manager's day.
+* Visit the site https://gravytates.github.io/animalBook
+* A typescript and angular website to track animal data at the local zoo! Zoo staff can add and edit an animal's personal profile. See all animals or group them by age and diet! See the total minimum caretakers required on a day-to-day basis and checkout the average animal age at the zoo. Using custom components and ng pipes, this site is perfect for organizing a busy zoo manager's day.
 
 ### MVP features
 
@@ -10,14 +10,14 @@ Each animal has properties describing its: species, name, age, diet, location, a
 Users can add a new animal to the site.
 Users can see a list of all animals by default and filter between available lists of young animals (under two years old), and mature animals (two years and older).
 Users can click an animal to edit its properties.
+Site will list minimum total number of caretakers needed in a day.
+Average age of all animals.
+Group by Diet type (carnivores, omnivores, herbivores).
 
 ### Room for additional Functionality
 
-Site will list minimum total number of caretakers needed in a day.
-Average age of all animals.
-Group by species- specific data features of subgroups (avg age, total caretakers)
-Group by Diet type (carnivores, omnivores, herbivores)
-Featured animal of the day
+Group by species- specific data features of subgroups (avg age, total caretakers).
+Featured animal of the day.
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ Featured animal of the day
 
 ### Setup/Installation Requirements
 
-* If you would like to clone this app to your local machine, download this repository at https://github.com/gravytates/doctor_discovery.git
+* If you would like to clone this app to your local machine, download this repository at https://github.com/gravytates/animalBook.git
 * Open in desktop
 * Run:
 ```
