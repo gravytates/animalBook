@@ -17,8 +17,9 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   masterAnimalList: Animal[] = [
-    new Animal('Arctic Fox', 'Moon', 1, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool Shade', 'Loud noises'),
+    new Animal('Arctic Fox', 'Moon', 1, 'Carnivore', 'Polar Bowl', 5, 'Female', 'Cool Shade', 'Loud noises'),
     new Animal('Three Toed Sloth', 'Prince', 4, 'Omnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in sun', 'Non-rope toys'),
-    new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Delicate roots and leaves', 'Loud noises')
+    new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Delicate roots and leaves', 'Loud noises'),
+    new Animal('African Box Turtle', 'Calvin', 22, 'Omnivore', 'African Savannah', 1, 'Male', 'Sun and grubs', 'Cold')
   ];
 }

@@ -12,7 +12,15 @@ import { Animal } from './animal.model';
     <div class="col-md-4">
       <h3>Animal List</h3>
       <hr>
-      <div *ngFor='let currentAnimal of childAnimalList'>
+
+      <select (change)="onChange($event.target.value)">
+        <option value="allAnimals" selected="selected">All Animals</option>
+        <option value="youngAnimals">Animals under 2 years old</option>
+        <option value="matureAnimals">Animals 2 years or older</option>
+      </select>
+      <hr>
+
+      <div *ngFor='let currentAnimal of childAnimalList | age:filterAge'>
         <p (click)="editAnimal(currentAnimal)"><b>{{currentAnimal.name}}, {{currentAnimal.species}}</b>, Age: <b>{{currentAnimal.age}}</b></p>
       </div>
     </div>
@@ -44,5 +52,11 @@ export class AnimalListComponent {
 
   finishedEditing(){
     this.selectedAnimal = null;
+  }
+
+  filterAge: string = "allAnimals";
+
+  onChange(menuOption) {
+    this.filterAge = menuOption;
   }
 }
