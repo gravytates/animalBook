@@ -41,13 +41,43 @@ $ gulp build --production
 $ gulp serve
 ```
 
-## Screenshots
+### Code Sample
 
-**Forms:**
-![Image of forms](img/forms.png)
 
-**Doctor Profiles:**
-![Image of a doctor profile](img/doctors.png)
+Pipe using transform method to filter animals:
+```
+transform(input: Animal[], filterCondition){
+  var output: Animal[] = [];
+  switch(filterCondition){
+    case "youngAnimals":
+      return input.filter(function(animal){
+        return animal.age < 3;
+      });
+    case "matureAnimals":
+      return input.filter(function(animal){
+        return animal.age >= 3;
+      });
+    case "omnivores":
+      return input.filter(function(animal){
+        return animal.diet === "Omnivore";
+      });
+    case "carnivores":
+      return input.filter(function(animal){
+        return animal.diet === "Carnivore";
+      });
+    case "herbivores":
+      return input.filter(function(animal){
+        return animal.diet === "Herbivore";
+      });
+    case "any-meat-eaters":
+      return input.filter(function(animal){
+        return animal.diet === "Omnivore" || animal.diet === "Carnivore";
+      });
+    default:
+      return input;
+  }
+}
+```
 
 ## Built With
 
