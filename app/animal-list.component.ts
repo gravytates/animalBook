@@ -15,8 +15,11 @@ import { Animal } from './animal.model';
 
       <select class="form-control" (change)="onChange($event.target.value)">
         <option value="allAnimals" selected="selected">All Animals</option>
-        <option value="youngAnimals">Animals under 2 years old</option>
-        <option value="matureAnimals">Animals 2 years or older</option>
+        <option value="youngAnimals">Animals under 3 years old</option>
+        <option value="matureAnimals">Animals 3 years or older</option>
+        <option value="omnivores">Omnivores</option>
+        <option value="carnivores">Carnivores</option>
+        <option value="herbivores">Herbivores</option>
       </select>
       <hr>
 

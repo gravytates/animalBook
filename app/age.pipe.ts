@@ -11,14 +11,35 @@ export class AgePipe implements PipeTransform {
       var output: Animal[] = [];
       if(desiredAge === "youngAnimals") {
       for (var i = 0; i < input.length; i++){
-        if (input[i].age < 2){
+        if (input[i].age < 3){
           output.push(input[i]);
         }
       }
       return output;
     } else if (desiredAge === "matureAnimals") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].age >= 2) {
+        if (input[i].age >= 3) {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredAge === "omnivores"){
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].diet === "Omnivore") {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredAge === "carnivores"){
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].diet === "Carnivore") {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else if (desiredAge === "herbivores"){
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].diet === "Herbivore") {
           output.push(input[i]);
         }
       }

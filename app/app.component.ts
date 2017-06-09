@@ -5,8 +5,9 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12"><h1>AnimalBook</h1></div>
+    <div class="jumbotron">
+      <h1>AnimalBook</h1>
+      <div></div>
     </div>
     <div class="row">
       <div class="col-md-12"><animal-list [childAnimalList]="masterAnimalList"></animal-list></div>
@@ -17,7 +18,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   masterAnimalList: Animal[] = [
-    new Animal('Arctic Fox', 'Moon', 1, 'Carnivore', 'Polar Bowl', 5, 'Female', 'Cool Shade', 'Loud noises', 'https://s-media-cache-ak0.pinimg.com/736x/e8/1d/d6/e81dd6de06ac330c027afaf6ba2addf4.jpg'),
+    new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Polar Bowl', 5, 'Female', 'Cool Shade', 'Loud noises', 'https://s-media-cache-ak0.pinimg.com/736x/e8/1d/d6/e81dd6de06ac330c027afaf6ba2addf4.jpg'),
     new Animal('Three Toed Sloth', 'Prince', 4, 'Omnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in sun', 'Non-rope toys', 'http://i0.kym-cdn.com/entries/icons/facebook/000/012/538/slothy.jpg'),
     new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Delicate roots and leaves', 'Loud noises', 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Formosan_sika_deer.jpg'),
     new Animal('African Box Turtle', 'Calvin', 22, 'Omnivore', 'African Savannah', 1, 'Male', 'Sun and grubs', 'Cold', 'http://www.photomazza.com/IMG/jpg_Lo_Psammobates_tentorius_e_una_splendida_testuggine_del_Sud_Africa_c_Giuseppe_Mazza.jpg'),
