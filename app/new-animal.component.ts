@@ -14,13 +14,13 @@ import { Animal } from './animal.model';
       <label>Age:</label><br>
       <input type="number" #age><br>
       <label>Diet:</label><br>
-      <select #diet>
+      <select class="form-control" #diet>
         <option> Omnivore </option>
         <option> Carnivore </option>
         <option> Herbivore </option>
       </select><br>
       <label>Location:</label><br>
-      <select #location>
+      <select class="form-control" #location>
         <option> Northern Trail </option>
         <option> Tropical Rain Forest Building </option>
         <option> Tiger Den </option>
@@ -30,14 +30,14 @@ import { Animal } from './animal.model';
       <label>Caretakers:</label><br>
       <input type="number" #caretakers><br>
       <label>Gender</label><br>
-      <select #gender>
+      <select class="form-control" #gender>
         <option [value]="Male"> Male </option>
         <option [value]="Female"> Female </option>
       </select><br>
       <label>Likes</label><br>
-      <input #likes><br>
+      <textarea class="form-control" rows="3" #likes></textarea><br>
       <label>Dislikes</label><br>
-      <input #dislikes><br>
+      <textarea class="form-control" rows="3" #dislikes></textarea><br>
     </div>
     <button class="btn btn-default"(click)="submitForm( species.value, name.value, age.value, diet.value, location.value, caretakers.value, gender.value, likes.value, dislikes.value); species.value=''; name.value=''; age.value=''; caretakers.value=''; likes.value=''; dislikes.value='';">Add Animal</button>
 

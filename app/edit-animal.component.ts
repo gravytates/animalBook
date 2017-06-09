@@ -5,6 +5,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
+  <h4>{{selectedAnimal.name}}'s Details (type-over and submit to edit): </h4>
   <div>
     <label>Species:</label><br>
     <input [(ngModel)]="selectedAnimal.species"><br>
@@ -13,13 +14,13 @@ import { Animal } from './animal.model';
     <label>Age:</label><br>
     <input type="number" [(ngModel)]="selectedAnimal.age"><br>
     <label>Diet:</label><br>
-    <select [(ngModel)]="selectedAnimal.diet">
+    <select class="form-control" [(ngModel)]="selectedAnimal.diet">
       <option> Omnivore </option>
       <option> Carnivore </option>
       <option> Herbivore </option>
     </select><br>
     <label>Location:</label><br>
-    <select [(ngModel)]="selectedAnimal.location">
+    <select class="form-control" [(ngModel)]="selectedAnimal.location">
       <option> Northern Trail </option>
       <option> Tropical Rain Forest Building </option>
       <option> Tiger Den </option>
@@ -29,14 +30,14 @@ import { Animal } from './animal.model';
     <label>Caretakers:</label><br>
     <input type="number" [(ngModel)]="selectedAnimal.caretakers"><br>
     <label>Gender</label><br>
-    <select [(ngModel)]="selectedAnimal.gender">
-      <option [value]="Male"> Male </option>
-      <option [value]="Female"> Female </option>
+    <select class="form-control" [(ngModel)]="selectedAnimal.gender">
+      <option> Male </option>
+      <option> Female </option>
     </select><br>
     <label>Likes</label><br>
-    <input [(ngModel)]="selectedAnimal.likes"><br>
+    <textarea class="form-control" rows="3" [(ngModel)]="selectedAnimal.likes"></textarea><br>
     <label>Dislikes</label><br>
-    <input [(ngModel)]="selectedAnimal.dislikes"><br>
+    <textarea class="form-control" rows="3" [(ngModel)]="selectedAnimal.dislikes"></textarea>
   </div>
   <br>
   <button class="btn btn-default" (click)="finishedEditing()">Done</button>
