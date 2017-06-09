@@ -25,7 +25,7 @@ import { Animal } from './animal.model';
         <hr>
 
         <div *ngFor='let currentAnimal of childAnimalList | age:filterBy'>
-          <p (click)="editAnimal(currentAnimal)"><b>{{currentAnimal.name}}, {{currentAnimal.species}}</b>, Age: <b>{{currentAnimal.age}}</b></p>
+          <p class="animal-list" (click)="editAnimal(currentAnimal)"><b>{{currentAnimal.name}}, {{currentAnimal.species}}</b>, Age: <b>{{currentAnimal.age}}</b></p>
         </div>
       </div>
       <div class="col-md-4">

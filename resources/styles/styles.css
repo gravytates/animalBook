@@ -7,4 +7,34 @@
 
 .jumbotron {
   background: rgba(255, 255, 255, 0.0);
+  height: 20%;
+}
+
+#animalBook {
+  font-family: 'Averia Serif Libre', cursive;
+  color: green;
+}
+
+.animal-list {
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.container-fluid {
+  margin-bottom: 55px;
+}
+
+#github {
+  color: white;
+  cursor: pointer;
 }
