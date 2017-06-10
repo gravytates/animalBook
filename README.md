@@ -1,7 +1,6 @@
 # _AnimalBook_
 ![Image of Homepage Screenshot](resources/images/homepage.png)
 
-* Visit the site https://gravytates.github.io/animalBook
 
 A zoo manager's best friend. This typescript and angular 2 website can help you track animal data at your local zoo. Zoo staff can add and edit an animal's personal profile. See all animals or group them by age and diet! See the total minimum caretakers required on a day-to-day basis, and checkout the average animal age at the zoo. Using custom components and ng pipes, this site is perfect for organizing a busy zoo manager's day.
 
