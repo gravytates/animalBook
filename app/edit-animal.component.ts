@@ -6,11 +6,12 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
   <br>
-  <h4>{{selectedAnimal.name}}'s Details (type-over and submit to edit): </h4>
+  <h4>{{selectedAnimal.name}}'s Details</h4>
   <img id="animal-pic" src={{selectedAnimal.image}} alt="Animal Pic">
   <p>
-    {{selectedAnimal.name}} is a {{selectedAnimal.gender}} {{selectedAnimal.species}}, currently located in the {{selectedAnimal.location}} portion of the zoo. {{selectedAnimal.name}} is {{selectedAnimal.age}} years old and subsists on a(n) {{selectedAnimal.diet}} diet. There are {{selectedAnimal.caretakers}} care takers, minimum, assigned to {{selectedAnimal.name}}'s well-being. They have informed that {{selectedAnimal.name}}'s likes include {{selectedAnimal.likes}}, and dislikes include {{selectedAnimal.dislikes}}.
+    {{selectedAnimal.name}} is a {{selectedAnimal.gender}} {{selectedAnimal.species}}, currently located in the {{selectedAnimal.location}} portion of the zoo. {{selectedAnimal.name}} is {{selectedAnimal.age}} year(s) old and subsists on a(n) {{selectedAnimal.diet}} diet provided by his caretakers, of which there are/is at least {{selectedAnimal.caretakers}}. Some of {{selectedAnimal.name}}'s 'likes' include {{selectedAnimal.likes}}, and some 'dislikes' include {{selectedAnimal.dislikes}}.
   </p>
+  <h4>Edit</h4>
   <div>
     <label>Species:</label><br>
     <input [(ngModel)]="selectedAnimal.species"><br>
