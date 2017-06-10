@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 
 var lib = require('bower-files')({
   "overrides":{
@@ -106,4 +108,12 @@ gulp.task('build', ['ts'], function(){
   // we can use the buildProduction environment variable here later.
   gulp.start('bower');
   gulp.start('sassBuild');
+});
+
+//////gh deployment////
+
+
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
