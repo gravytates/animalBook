@@ -6,7 +6,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/gravytates/animalBook",
   "ignore": [
     "**/.*",
     "node_modules",

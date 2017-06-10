@@ -31,15 +31,27 @@ A zoo manager's best friend. This typescript and angular 2 website can help you 
 ### Setup/Installation Requirements
 
 * If you would like to clone this app to your local machine, download this repository at https://github.com/gravytates/animalBook.git
-* Open in desktop
-* Run:
+* From your terminal in desktop Run:
+
 ```
+$ git clone https://github.com/gravytates/animalBook.git
+$ cd animalBook
 $ npm install
+```
+(this may take a couple of minutes depending on your machine and download speed)
+
+```
 $ bower init
+```
+Press 'enter' for each of the default bower prompts until you get back to your default shell.
+
+```
 $ bower install bootstrap --save
 $ gulp build --production
 $ gulp serve
 ```
+It's likely your default browser will automatically open and deploy the site at this point. If not, the most common port for this app is 3000, so simply enter 'localhost:3000' in your browser's address bar to see the website.
+* Enjoy!
 
 ### Code Sample
 
