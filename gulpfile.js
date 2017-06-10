@@ -113,7 +113,7 @@ gulp.task('build', ['ts'], function(){
 //////gh deployment////
 
 
-gulp.task('deploy', function () {
+gulp.task('deploy', ['build'], function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy())
 });
