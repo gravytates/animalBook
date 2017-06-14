@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var gulp = require('gulp');
 var deploy = require('gulp-gh-pages');
 var path = require('path');
+var ghpages = require('gh-pages');
 
 var lib = require('bower-files')({
   "overrides":{
