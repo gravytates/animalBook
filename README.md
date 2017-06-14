@@ -47,6 +47,7 @@ Press 'enter' for each of the default bower prompts until you get back to your d
 
 ```
 $ bower install bootstrap --save
+$ npm install --save-dev gulp-gh-pages
 $ gulp build --production
 $ gulp serve
 ```
