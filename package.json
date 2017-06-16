@@ -25,6 +25,7 @@
     "systemjs": "0.19.27"
   },
   "devDependencies": {
+    "@angular/cli": "^1.1.2",
     "bower-files": "3.11.3",
     "browser-sync": "2.11.1",
     "concurrently": "3.0.0",

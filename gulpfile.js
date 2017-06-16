@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var deploy = require('gulp-gh-pages');
 var path = require('path');
-var ghpages = require('gh-pages');
+
 
 var lib = require('bower-files')({
   "overrides":{
@@ -112,10 +112,3 @@ gulp.task('build', ['ts'], function(){
 });
 
 //////gh deployment////
-
-ghpages.publish('dist', ['build'], function(err) {});
-
-gulp.task('deploy', ['build'], function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
